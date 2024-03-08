@@ -257,7 +257,6 @@ print("Updated Dictionary:", numbers_dict)
   d. ...
 
   e. ...
-
   f. ...
 
   g. Type Conversion: Convert the list to a tuple, set, and dictionary. Convert the tuple to a list, set, and dictionary. Convert the set to a list, tuple, and dictionary. Convert the dictionary to a list, tuple, and set.
@@ -285,35 +284,25 @@ print("Updated Dictionary:", numbers_dict)
 ```
 """
 
-# Input
-input_numbers = input("Enter a series of space-separated integers: ")
+# Convert list to tuple, set, and dictionary
+list_to_tuple = tuple(numbers_list)
+list_to_set = set(numbers_list)
+list_to_dict = {num: num**2 for num in numbers_list}
 
-# Convert Input
+# Convert tuple to list, set, and dictionary
+tuple_to_list = list(numbers_tuple)
+tuple_to_set = set(numbers_tuple)
+tuple_to_dict = {num: num**2 for num in numbers_tuple}
 
-# Manipulate List
+# Convert set to list, tuple, and dictionary
+set_to_list = list(input_set)
+set_to_tuple = tuple(input_set)
+set_to_dict = {num: num**2 for num in input_set}
 
-# Attempt to Modify Tuple (this will raise an error)
-
-# Set Operations
-
-# Dictionary Operations
-print("Original Dictionary:", numbers_dict)
-# Add a new key-value pair
-# Delete an existing key-value pair
-
-# Type Conversion
-# list_to_tuple =
-# list_to_set =
-# list_to_dict =
-# tuple_to_list =
-# tuple_to_set =
-# tuple_to_dict =
-# set_to_list =
-# set_to_tuple =
-# set_to_dict =
-# dict_to_list =
-# dict_to_tuple =
-# dict_to_set =
+# Convert dictionary to list, tuple, and set
+dict_to_list = list(numbers_dict.values())
+dict_to_tuple = tuple(numbers_dict.values())
+dict_to_set = set(numbers_dict.values())
 
 # Print Output
 print("List to Tuple:", list_to_tuple)
@@ -328,6 +317,7 @@ print("Set to Dictionary:", set_to_dict)
 print("Dictionary to List:", dict_to_list)
 print("Dictionary to Tuple:", dict_to_tuple)
 print("Dictionary to Set:", dict_to_set)
+
 
 """8.
 Extend the previous Python program to write the output to a file and perform operations on that file.
